@@ -1,0 +1,176 @@
+/* src/Header.css */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;   /* 왼쪽 로고, 오른쪽 로그인 버튼 */
+  height: 56px;
+  padding: 0 16px;
+  background: #111;
+  color: #fff;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo-image {
+  height: 32px;
+  width: auto;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.login-button {
+  padding: 6px 12px;
+  border-radius: 16px;
+  border: none;
+  background-color: #ff4b3a;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #ff6b5a;
+}
+
+/* 모달 스타일 */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  width: 320px;
+  padding: 20px 18px 16px;
+  background-color: #181818;
+  color: #fff;
+  border-radius: 8px;
+  position: relative;
+}
+
+.modal-title {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-label {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  gap: 4px;
+}
+
+.modal-input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background-color: #101010;
+  color: #fff;
+}
+
+.modal-submit {
+  margin-top: 4px;
+  padding: 8px 0;
+  border-radius: 6px;
+  border: none;
+  background-color: #33cc55;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.modal-footer {
+  margin-top: 10px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.signup-link {
+  border: none;
+  background: none;
+  color: #4da3ff;
+  text-decoration: underline;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.modal-close {
+  margin-top: 8px;
+  width: 100%;
+  border: none;
+  background: none;
+  color: #bbbbbb;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.error-message {
+  color: #ff4b3a;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.user-name {
+  margin-right: 8px;
+  color: #fff;
+}
+
+.logout-button {
+  padding: 6px 12px;
+  border-radius: 16px;
+  border: none;
+  background-color: #666;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+/* src/Header.css에 추가 */
+.worldcup-button {
+  padding: 6px 12px;
+  border-radius: 16px;
+  border: none;
+  background-color: #4da3ff;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.worldcup-button:hover {
+  background-color: #5bb3ff;
+}
+
+.tierlist-button {
+  padding: 6px 12px;
+  border-radius: 16px;
+  border: none;
+  background-color: #4da3ff;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tierlist-button:hover {
+  background-color: #5bb3ff;
+}

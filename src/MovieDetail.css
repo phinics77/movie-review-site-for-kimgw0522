@@ -1,0 +1,288 @@
+/* src/MovieDetail.css */
+.movie-detail-page {
+    background-color: #0b0b0b;
+    min-height: calc(100vh - 56px);
+    color: #fff;
+  }
+  
+  .movie-detail-hero {
+    display: flex;
+    gap: 24px;
+    padding: 40px;
+    background: linear-gradient(to bottom, #1b1b1b, #0b0b0b);
+  }
+  
+  .detail-poster {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+    flex-shrink: 0;
+  }
+  
+  .movie-detail-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .detail-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .detail-meta {
+    display: flex;
+    gap: 8px;
+    color: #aaa;
+    font-size: 16px;
+  }
+  
+  .detail-rating-section {
+    margin-top: 8px;
+  }
+  
+  .rating-box {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 16px 24px;
+    background-color: #181818;
+    border-radius: 12px;
+    border: 1px solid #333;
+  }
+  
+  .rating-label {
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 4px;
+  }
+  
+  .rating-value {
+    font-size: 32px;
+    font-weight: 800;
+    color: #ff4b3a;
+  }
+  
+  .rating-max {
+    font-size: 18px;
+    margin-left: 4px;
+    color: #888;
+  }
+  
+  .rating-count {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #aaa;
+  }
+  
+  .movie-detail-content {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .detail-section {
+    margin-bottom: 40px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .review-count {
+    font-size: 18px;
+    color: #aaa;
+    font-weight: 400;
+  }
+  
+  .movie-overview {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ddd;
+  }
+  
+  /* 로그인 프롬프트 */
+  .login-prompt {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #181818;
+    border-radius: 12px;
+    border: 1px solid #333;
+  }
+  
+  .login-message {
+    font-size: 16px;
+    color: #aaa;
+    margin-bottom: 24px;
+  }
+  
+  .login-prompt-button {
+    background-color: #e91e63;
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .login-prompt-button:hover {
+    background-color: #c2185b;
+  }
+  
+  /* 리뷰 작성 폼 */
+  .review-form-section {
+    background-color: #181818;
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 32px;
+    border: 1px solid #333;
+  }
+  
+  .form-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  
+  .review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .form-label {
+    font-size: 14px;
+    color: #aaa;
+  }
+  
+  .rating-select {
+    background-color: #0b0b0b;
+    color: #fff;
+    border: 1px solid #333;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .review-textarea {
+    background-color: #0b0b0b;
+    color: #fff;
+    border: 1px solid #333;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    resize: vertical;
+    font-family: inherit;
+  }
+  
+  .review-textarea:focus,
+  .rating-select:focus {
+    outline: none;
+    border-color: #555;
+  }
+  
+  .submit-review-button {
+    background-color: #33cc55;
+    color: #000;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .submit-review-button:hover:not(:disabled) {
+    background-color: #2bb349;
+  }
+  
+  .submit-review-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  /* 리뷰 목록 */
+  .reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .review-item {
+    background-color: #181818;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #333;
+  }
+  
+  .review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .review-author {
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  .review-rating {
+    color: #ff4b3a;
+    font-weight: 600;
+  }
+  
+  .review-content {
+    color: #ddd;
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+  
+  .review-date {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .no-reviews {
+    text-align: center;
+    color: #aaa;
+    padding: 40px;
+    background-color: #181818;
+    border-radius: 12px;
+    border: 1px solid #333;
+  }
+  
+  @media (max-width: 768px) {
+    .movie-detail-hero {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .detail-poster {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  
+    .movie-detail-content {
+      padding: 20px;
+    }
+  }

@@ -1,0 +1,109 @@
+/* src/components/Header.css */
+
+.main-header {
+  height: 56px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #111;
+  color: #fff;
+}
+
+.logo-image {
+  height: 32px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.login-button {
+  padding: 6px 12px;
+  border-radius: 16px;
+  border: none;
+  background-color: #ff4b3a;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* 모달 공통 */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  width: 320px;
+  padding: 20px 18px 16px;
+  background-color: #181818;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.modal-title {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-label {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  gap: 4px;
+}
+
+.modal-input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background-color: #101010;
+  color: #fff;
+}
+
+.modal-submit {
+  margin-top: 4px;
+  padding: 8px 0;
+  border-radius: 6px;
+  border: none;
+  background-color: #33cc55;
+  color: #000;
+  font-weight: 700;
+}
+
+.modal-footer {
+  margin-top: 10px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.signup-link {
+  border: none;
+  background: none;
+  color: #4da3ff;
+  text-decoration: underline;
+  font-size: 12px;
+}
+
+.modal-close {
+  margin-top: 8px;
+  border: none;
+  background: none;
+  color: #bbbbbb;
+  font-size: 12px;
+}
